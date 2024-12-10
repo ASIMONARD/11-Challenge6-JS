@@ -1,0 +1,34 @@
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
+
+console.log("Manche 1 :")
+let averageDauphines1 = calcAverage(44, 23, 71)
+console.log(`Moyenne Dauphnes : ${averageDauphines1}`)
+let averageKoalas1 = calcAverage(65, 54, 49)
+console.log(`Moyenne Koalas : ${averageKoalas1}`)
+
+const checkWinner = (average1, average2) => (average1 > average2) ? 'Dauphines' : 'Koalas'
+
+let average1 = averageDauphines1
+let average2 = averageKoalas1
+
+if (average1 > average2) {
+    console.log(`L'équipe ${checkWinner(average1, average2)} gagne (${average1} vs ${average2})`)
+} else {
+    console.log(`L'équipe ${checkWinner(average1, average2)} gagne (${average2} vs ${average1})`)
+}
+console.log("")
+
+console.log("Manche 2 :")
+let averageDauphines2 = calcAverage(85, 54, 41 )
+console.log(`Moyenne Dauphnes : ${averageDauphines2}`)
+let averageKoalas2 = calcAverage(23, 34, 27)
+console.log(`Moyenne Koalas : ${averageKoalas1}`)
+
+average1 = averageDauphines2
+average2 = averageKoalas2
+
+if (average1 > average2) {
+    console.log(`L'équipe ${checkWinner(average1, average2)} gagne (${average1} vs ${average2})`)
+} else {
+    console.log(`L'équipe ${checkWinner(average1, average2)} gagne (${average2} vs ${average1})`)
+}
